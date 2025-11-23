@@ -20,28 +20,28 @@
       "ioValues": [
         {
           "name": "diameter",
+          "ioValue": 90,
+          "currentEquation": "90"
+        }
+      ]
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.08866222047861907,
+      "y": 0.592057761732852,
+      "uniqueID": "id-13",
+      "ioValues": [
+        {
+          "name": "diameter",
           "ioValue": 100,
           "currentEquation": "100"
         }
       ]
     },
     {
-      "atomType": "Circle",
-      "x": 0.08670066692820715,
-      "y": 0.6209386281588448,
-      "uniqueID": "id-13",
-      "ioValues": [
-        {
-          "name": "diameter",
-          "ioValue": 120,
-          "currentEquation": "120"
-        }
-      ]
-    },
-    {
       "atomType": "Difference",
-      "x": 0.29972538250294234,
-      "y": 0.35559566787003605,
+      "x": 0.2969792075323656,
+      "y": 0.36101083032490977,
       "uniqueID": "id-16"
     },
     {
@@ -72,8 +72,8 @@
     },
     {
       "atomType": "Circle",
-      "x": 0.46841898783836794,
-      "y": 0.5288808664259927,
+      "x": 0.541781090623774,
+      "y": 0.2527075812274368,
       "uniqueID": "id-28",
       "ioValues": [
         {
@@ -85,8 +85,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.5880345233424873,
-      "y": 0.4693140794223827,
+      "x": 0.45351118085523734,
+      "y": 0.3212996389891697,
       "uniqueID": "id-31",
       "ioValues": [
         {
@@ -95,6 +95,67 @@
           "currentEquation": "5"
         }
       ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.3970184386033739,
+      "y": 0.7382671480144405,
+      "uniqueID": "id-35"
+    },
+    {
+      "atomType": "Export",
+      "x": 0.5358964299725383,
+      "y": 0.7978339350180506,
+      "uniqueID": "id-39",
+      "ioValues": [
+        {
+          "name": "File Type",
+          "ioValue": "STL"
+        },
+        {
+          "name": "Resolution (dpi)",
+          "ioValue": 96
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Rechteck_2"
+        }
+      ],
+      "type": null,
+      "resolution": 96,
+      "importIndex": 0,
+      "partName": "Rechteck_2"
+    },
+    {
+      "atomType": "Gcode",
+      "x": 0.5884660651235779,
+      "y": 0.4927797833935018,
+      "uniqueID": "id-44",
+      "ioValues": [
+        {
+          "name": "Tool Size",
+          "ioValue": 6.35
+        },
+        {
+          "name": "Passes",
+          "ioValue": 1
+        },
+        {
+          "name": "Speed",
+          "ioValue": 1500,
+          "currentEquation": "1500"
+        },
+        {
+          "name": "Cut Through",
+          "ioValue": 0
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Kreisring"
+        }
+      ],
+      "partName": "Rechteck_2",
+      "sortDirection": "Left"
     }
   ],
   "allConnectors": [
@@ -110,6 +171,11 @@
     },
     {
       "ap2Name": "geometry2",
+      "ap1ID": "id-16",
+      "ap2ID": "id-35"
+    },
+    {
+      "ap2Name": "geometry2",
       "ap1ID": "id-20",
       "ap2ID": "id-16"
     },
@@ -122,6 +188,26 @@
       "ap2Name": "geometry",
       "ap1ID": "id-28",
       "ap2ID": "id-31"
+    },
+    {
+      "ap2Name": "geometry1",
+      "ap1ID": "id-31",
+      "ap2ID": "id-35"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-35",
+      "ap2ID": "id-4"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-35",
+      "ap2ID": "id-39"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-35",
+      "ap2ID": "id-44"
     }
   ],
   "unitsKey": "MM",
